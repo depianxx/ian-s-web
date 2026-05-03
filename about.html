@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- 
+    DOCTYPE : memberitahu browser bahwa ini pakai HTML versi 5
+-->
+
+<html lang="id">
+<!-- 
+    <html> : wadah utama semua kode HTML
+    lang="id" : bahasa Indonesia
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 
+        <meta charset="UTF-8"> : mengatur jenis huruf/karakter
+    -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        <meta name="viewport"> : mengatur tampilan di HP
+    -->
+    
+    <title>ian</title>
+    <!-- 
+        <title> : judul yang muncul di TAB browser
+    -->
+    
+    <!-- 
+        ========== FAVICON ==========
+        favicon : icon kecil yang muncul di samping judul tab browser
+    -->
+    <link rel="shortcut icon" href="meng.jpg" type="image/x-icon">
+    <link rel="icon" href="meng.jpg" type="image/x-icon">
+    
+    <style>
+        /* ========== CSS INI SAMA PERSIS DENGAN HALAMAN HOME & CONTACT ========== */
+        /* biar tampilannya konsisten di semua halaman */
+        
+        /* ini untuk mengatur style seluruh halaman */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        /* ini untuk membuat kotak putih di tengah */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        /* ini untuk navigasi menu */
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        /* style link di navigasi */
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #6c5a9c;
+            font-weight: bold;
+        }
+        
+        /* efek saat mouse di atas link */
+        nav a:hover {
+            color: #001aff;
+            text-decoration: underline;
+        }
+        
+        /* style untuk judul h1 */
+        h1 {
+            color: #6c5a9c;
+            text-align: center;
+            margin-bottom: 20px;
+            display: inline-block;
+            padding-left: 15px;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* style untuk artikel (tentang saya) */
+        article {
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        /* style paragraf */
+        article p {
+            text-align: left;
+            max-width: 600px;
+            margin: 15px auto;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* style untuk wadah video biar responsif di HP */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        /* biar video bisa mengecil di HP */
+        iframe {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* style garis pemisah */
+        hr {
+            margin: 20px 0;
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+        }
+        
+        /* style footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        /* style untuk daftar hobi / skill (tambahan biar lebih menarik) */
+        .info-list {
+            max-width: 500px;
+            margin: 20px auto 0;
+            text-align: left;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        .info-list ul {
+            padding-left: 20px;
+        }
+        
+        .info-list li {
+            margin: 8px 0;
+        }
+        
+        /* efek hover untuk video */
+        iframe:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ini wadah utama / kotak putih pembungkus semua konten -->
+<div class="container">
+
+    <!-- ==================== BAGIAN NAVIGASI ==================== -->
+    <!-- 
+        <nav> : menu navigasi
+        SAMA PERSIS dengan halaman Home dan Contact
+    -->
+    <nav>
+        <a href="designWeb.html">Home</a>     
+        <a href="cv2.pdf">Download CV</a> 
+        <a href="contact.html">Contact</a>    
+        <a href="about.html">About me</a>     
+    </nav>
+
+    <hr />
+
+    <!-- ==================== BAGIAN ABOUT ME ==================== -->
+    <!-- 
+        <article> : tag untuk artikel/konten utama
+        gunanya biar mesin pencari tau ini bagian konten utama
+    -->
+    <article>
+        
+        <!-- 
+            <h1> : judul halaman About Me
+        -->
+        <h1>About Me</h1>
+       
+        <p>
+            <strong>Hi, saya Ni Made Kessari Oktaviani!</strong>
+            Saya adalah web developer pemula yang berdomisili di Bali. 
+            Saat ini saya sedang aktif belajar HTML, CSS, dan UIUX.
+        </p>
+        
+        <!-- 
+            ==================== VIDEO YOUTUBE ====================
+            Ini contoh menyisipkan video dari YouTube
+        -->
+        
+        <!-- 
+            <div class="video-container"> : wadah untuk video
+            gunanya biar video bisa diatur posisinya (di tengah)
+        -->
+        <div class="video-container">
+            <!-- 
+                <iframe> : tag untuk menyisipkan halaman web lain ke dalam halaman kita
+                (biasa dipakai untuk menyisipkan video YouTube, Google Maps, dll)
+            
+                width="560" height="315" : ukuran video
+                src="..." : link video YouTube (embedded)
+                allowfullscreen : biar bisa fullscreen
+            -->
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/sElE_BfQ67s" 
+                title="Cigarettes After Sex - Apocalypse" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+           
+        </div>
+        
+        <p style="font-size: 14px; color: #777; margin-top: 10px;">
+            "Cigarettes After Sex - Apocalypse" 
+        </p>
+        
+        
+    </article>
+
+    <hr />
+
+    <!-- ==================== FOOTER ==================== -->
+    <!-- 
+        <footer> : bagian kaki halaman
+        SAMA PERSIS dengan halaman Home dan Contact
+    -->
+    <footer>
+        <p>Copyright © 2026 vian.</p>
+    </footer>
+    
+</div>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ian</title>
+    
+     <link rel="shortcut icon" href="meng.jpg" type="image/x-icon">
+    <link rel="icon" href="meng.jpg" type="image/x-icon">
+    <!-- CSS (Cascading Style Sheets) : ini untuk mengatur tampilan/penampilan web -->
+    <style>
+        /* CSS mulai dari sini */
+        
+        /* ini untuk mengatur style seluruh halaman */
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* jenis huruf */
+            margin: 0; /* hapus margin bawaan browser */
+            padding: 20px; /* kasih ruang di tepi dalam */
+            background-color: #f5f5f5; /* warna background abu muda */
+        }
+        
+        /* ini untuk membuat kotak putih di tengah */
+        .container {
+            max-width: 900px; /* lebar maksimal */
+            margin: auto; /* biar tengah */
+            background: white; /* background putih */
+            padding: 20px; /* ruang di dalam kotak */
+            border-radius: 15px; /* bikin sudut kotaknya melengkung */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* kasih bayangan tipis */
+        }
+        
+        /* ini untuk navigasi menu */
+        nav {
+            text-align: center; /* teks di tengah */
+            margin-bottom: 20px; /* jarak ke bawah */
+            padding-bottom: 10px; /* ruang dalam bawah */
+            border-bottom: 2px solid #ddd; /* garis bawah */
+        }
+        
+        /* style link di navigasi */
+        nav a {
+            margin: 0 10px; /* jarak kiri kanan antar link */
+            text-decoration: none; /* hapus garis bawah bawaan link */
+            color: #6c5a9c; /* warna ungu */
+            font-weight: bold; /* teks tebal */
+        }
+        
+        /* efek saat mouse di atas link */
+        nav a:hover {
+            color: #001aff;
+            text-decoration: underline; /* muncul garis bawah */
+        }
+        
+        /* style untuk header (bagian profil) */
+        header {
+            text-align: center; /* semua teks di tengah */
+        }
+        
+        /* style foto profil */
+        .foto-profil {
+            width: 150px; /* lebar 150 pixel */
+            height: 150px; /* tinggi 150 pixel */
+            border-radius: 50%; /* bikin bentuk lingkaran */
+            object-fit: cover; /* biar fotonya pas di dalam lingkaran */
+            border: 3px solid #6c5a9c; /* kasih border ungu */
+        }
+        
+        /* style judul h1 */
+        h1 {
+            color: #333; /* warna abu tua */
+            margin: 10px 0 5px 0; /* margin atas 10, kanan 0, bawah 5, kiri 0 */
+        }
+        
+        /* style untuk sub judul / status */
+        .status {
+            color: #6c5a9c; /* warna ungu */
+            font-size: 18px; /* ukuran huruf */
+            font-weight: bold; /* tebal */
+        }
+        
+        /* style untuk bagian artikel */
+        article {
+            background-color: #f9f9f9; /* background abu sangat muda */
+            padding: 15px; /* ruang dalam */
+            border-radius: 10px; /* sudut melengkung */
+            margin: 20px 0; /* margin atas bawah 20 */
+        }
+        
+        /* style judul dalam artikel */
+        article h2 {
+            color: #6c5a9c; /* warna ungu */
+        }
+        
+        /* style untuk tabel */
+        table {
+            width: 100%; /* lebar penuh */
+            border-collapse: collapse; /* gabungkan border jadi 1 garis */
+            margin: 20px 0; /* margin atas bawah */
+        }
+        
+        /* style untuk th (header tabel) */
+        th {
+            background-color: #6c5a9c; /* background ungu */
+            color: white; /* tulisan putih */
+            padding: 10px; /* ruang dalam */
+            text-align: left; /* teks rata kiri */
+        }
+        
+        /* style untuk td (isi tabel) */
+        td {
+            border: 1px solid #ddd; /* garis abu */
+            padding: 10px; /* ruang dalam */
+            vertical-align: top; /* isi sel rata atas */
+        }
+        
+        /* style footer */
+        footer {
+            text-align: center; /* teks di tengah */
+            margin-top: 20px; /* jarak dari atas */
+            padding-top: 10px; /* ruang dalam atas */
+            border-top: 1px solid #ddd; /* garis abu di atas */
+            color: #777; /* warna abu */
+            font-size: 14px; /* ukuran huruf kecil */
+        }
+    </style>
+</head>
+<body>
+
+<!-- ini wadah utama / kotak putih pembungkus semua konten -->
+<div class="container">
+
+    <!-- ==================== BAGIAN NAVIGASI ==================== -->
+    <!-- nav : menu navigasi untuk berpindah halaman -->
+    <nav>
+        <!-- a : tag untuk membuat link -->
+        <a href="index.html">Home</a>     <!-- link ke halaman home -->
+        <a href="cv2.pdf">Download CV</a> <!-- link untuk download file CV -->
+        <a href="contact.html">Contact</a>    <!-- link ke halaman kontak -->
+        <a href="about.html">About me</a>     <!-- link ke halaman tentang saya -->
+    </nav>
+    <!-- penjelasan: href itu atribut untuk menentukan tujuan link -->
+
+
+    <!-- ==================== BAGIAN HEADER / PROFIL ==================== -->
+    <!-- header : bagian pembuka / perkenalan diri -->
+    <header>
+        <!-- img : tag untuk menampilkan gambar -->
+        <!-- src : source / letak file gambar -->
+        <!-- alt : teks alternatif jika gambar gagal dimuat -->
+        <img src="fotoku.jpeg" alt="Foto Profil Kessari" class="foto-profil">
+        
+        <!-- h1 : heading level 1 (paling besar) untuk nama lengkap -->
+        <h1>Ni Made Kessari Oktaviani</h1>
+        
+    </header>
+
+
+    <!-- ==================== BAGIAN GARIS PEMISAH ==================== -->
+    <!-- hr : horizontal rule, bikin garis pemisah -->
+    <hr>
+
+
+    <!-- ==================== BAGIAN ARTIKEL / OVERVIEW ==================== -->
+    <!-- article : bagian artikel / isi konten utama -->
+    <article>
+        <!-- h2 : heading level 2 (lebih kecil dari h1) -->
+        <h2>Overview</h2>
+        
+        <!-- p : paragraf, isinya teks perkenalan -->
+        <p>
+            Halo! Saya <strong>Ni Made Kessari Oktaviani</strong>, mahasiswa Informatika semester 2 
+            yang sedang belajar membuat website. Saat ini saya senang belajar hal-hal baru 
+            tentang dunia programming dan desain web.
+        </p>
+        
+        <p>Berikut fokus belajar saya saat ini:</p>
+        
+        <!-- ul : unordered list (daftar tidak berurutan / pakai bullet point) -->
+        <!-- li : list item (item dalam daftar) -->
+        <ul>
+            <li>Desain UI/UX pakai Figma</li>   <!-- li pertama -->
+            <li>Pengembangan Front-End (HTML, CSS, JavaScript(otw))</li>  <!-- li kedua -->
+            <li>Membuat website yang tampilannya bagus di HP</li>  <!-- li ketiga -->
+        </ul>
+        <!-- penjelasan: <ul> itu wadahnya, <li> itu isi itemnya -->
+    </article>
+
+
+    <!-- ==================== BAGIAN TABEL SKILL & PENGALAMAN ==================== -->
+    <!-- table : untuk membuat tabel -->
+    <table>
+        <!-- thead : bagian kepala tabel -->
+        <thead>
+            <!-- tr : table row (baris dalam tabel) -->
+            <tr>
+                <!-- th : table header (judul kolom) -->
+                <th>Skill yang Dipelajari</th>
+                <th>Pengalaman Belajar</th>
+            </tr>
+        </thead>
+        
+        <!-- tbody : bagian isi / body tabel -->
+        <tbody>
+            <!-- tr : baris pertama (dan satu-satunya) -->
+            <tr>
+                <!-- td : table data (isi sel) -->
+                <td>
+                    <!-- ul di dalam tabel untuk daftar skill -->
+                    <ul>
+                        <li><strong>HTML</strong> (Beginner) - bisa bikin struktur web</li>
+                        <li><strong>CSS</strong> (Beginner) - bisa ngatur tampilan</li>
+                        <li><strong>JavaScript</strong> (otw) - biar webnya interaktif</li>
+                        <li><strong>Figma</strong> - buat desain sebelum coding</li>
+                    </ul>
+                </td>
+                
+                <td>
+                    <!-- ul di dalam tabel untuk daftar pengalaman -->
+                    <ul>
+                        <li>Belajar HTML/CSS dari <strong>Petani Kode</strong></li>
+                        <li>Mengerjakan project web pribadi (portofolio sendiri)</li>
+                        <li>Ngikutin tutorial YouTube dan W3School</li>
+                        <li>Praktikum mata kuliah Pemrograman Web</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- penjelasan: 
+         <table> = wadah tabel
+         <tr> = baris
+         <th> = kepala / judul kolom (bold otomatis)
+         <td> = isi data
+    -->
+
+
+    <!-- ==================== BAGIAN FOOTER ==================== -->
+    <!-- hr : garis pemisah lagi -->
+    <hr>
+    
+    <!-- footer : bagian kaki halaman -->
+    <footer>
+        <p>Copyright © 2026 vian. </p>
+    </footer>
+</div>
+<!-- penutup container -->
+
+</body>
+</html>
